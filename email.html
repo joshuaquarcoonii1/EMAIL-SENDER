@@ -1,0 +1,99 @@
+<html>
+<header><title>Enter Your email</title>
+
+</head>
+</header>
+<h1>EMAIL SENDER</h1>
+
+<div class="text-box">
+
+<form action="mailto:joshuaquarcoonii1@gmail.com" method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+
+<label>Enter recipient email address</label><br><br>
+<input type="text" name="email" placeholder="Click here to enter Email"><br>
+<input type="submit" name="Send" value="Send">
+
+
+
+</form>
+
+
+
+
+
+</div>
+
+
+<style>
+    *{
+    margin:0;
+    padding:0;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+    body{
+        background-color: rgb(112, 108, 108);
+        background-image: url(images.jfif);
+        background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    position:relative;
+    overflow:hidden;
+    }
+.text-box{
+    text-align: center;
+    background:transparent;
+    border:none;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width:90%;
+}
+ h1{
+    color: chocolate;
+    font-size:62px;
+   margin-top: 17%;
+    text-align: center;
+
+}
+::placeholder {
+    color:chocolate ;
+text-align: center;
+font-size: 25px;
+}
+.text-box form  input[type=text]{
+    border-radius: 5px;
+    width: 400px;
+
+height: 40px;
+border:1px  chocolate;
+}
+input[type=submit]{
+background: transparent;
+color: chocolate;
+border:none;
+}
+
+.text-box form  label{
+    font-size: 40px;
+    color: chocolate;
+}
+
+</style>
+
+
+
+<script language="JavaScript">
+        var frmvalidator  = new Validator("EmailForm");
+
+frmvalidator.addValidation("email","email",
+      "Please enter a valid email address");
+    </script>
+
+
+
+
+
+</html>
